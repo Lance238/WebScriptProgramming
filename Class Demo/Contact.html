@@ -1,0 +1,70 @@
+<!--The HTML5 doctype declaration is very simple--> 
+<!DOCTYPE HTML> 
+<!--All page content is inside the HTML element--> 
+<html> <!--Head element content is not visible in a browser window--> 
+<head> <!--The UTF-8 character set provides the most support for all symbols and characters--> 
+    <meta charset="UTF-8"> 
+    <title>HTML Template</title> <!-- The following line links to our style sheet file--> 
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"> 
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="banner"> 
+        </div>
+        <div id="nav"> 
+            <ul> 
+                <li> 
+                    <a href="index.html">Home</a>
+                </li> 
+                <li> 
+                    <a href="Contact.html">Contact</a>
+                </li> 
+                <li> 
+                    <a href="Projects.html">Projects</a>
+                </li> 
+                <li>
+                    <a href="AboutMe.html">About Me</a>
+                </li>
+            </ul> 
+        </div>
+
+        <div id="content">
+            <h1>This is the contact page</h1>
+
+            <form action=mailto:lance.palogan@ontariotechu.net ?subject=email Form method="post" enctype="text/plain" name="form">
+
+                <p>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Enter your Name" size="32" required>
+                </p>   
+                <p>
+                    <label for="email">Email</label>
+                    <input name="email" type="email" size="40" required>
+                </p>
+            
+                <p>
+                    <label for="phone">Phone number</label>
+                    <input name="phone" type="tel" size="40" required pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </p> 
+
+                <p>
+                    <label for="comments">Comments</label><br>
+                    <textarea name="comments" cols="60" rows="6"></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Click here to submit the form"/>
+                </p>
+
+            </form>
+
+        </div>
+
+        <div class="footer">
+            <p>Contact me at <a href = "mailto:lance.palogan@ontariotechu.net">lance.palogtan@ontariotechu.net</a></p>
+        </div>
+
+    </div>
+</body>
+</html>

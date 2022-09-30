@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body 
+{ 
+    background-color: black; 
+    background: linear-gradient(217deg, rgba(0, 255, 136, 0.671), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0, 183, 255, 0.692), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Arial, sans-serif; 
+    padding:0px; 
+    margin:0px; 
+}
+
+#nav {
+    overflow: auto;
+    margin: 1%;
+    background-color: greenyellow;
+    padding: 0.01m 0;
+
+}
+
+#nav a {
+    float: center;
+    display: block;
+    color: rgba(46, 102, 223, 0.849);
+    text-align: center;
+    padding: 17px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#nav a:hover {
+    background-color: rgb(54, 145, 36);
+    color: black;
+}
+
+#content {
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(117, 193, 255);
+    color: white;
+    text-align: center;
+}
