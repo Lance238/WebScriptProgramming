@@ -1,0 +1,117 @@
+/* custom css file goes here */ 
+
+
+/* Keyframe scripts */
+@keyframes slide-in-from-left {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-from-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+}
+
+@keyframes fadeIn { 
+	0% {opacity: 0;} 
+    100% {opacity: 1;} 
+
+}     
+
+h1{
+    text-align: center;
+    animation: slide-in-from-left 1000ms;
+}
+
+.column1, .column2, .column3{
+    width: 25.3%;
+    float: left;
+    margin: 4%;
+    overflow: auto;
+    height: 10em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+    border-top-width: 10px;
+}
+
+.column1:hover{
+    transform: scale(1.2);
+}
+
+.column2:hover{
+    transform: scale(1.2);
+}
+
+.column3:hover{
+    margin-right: 0%;
+    transform: scale(1.2);
+}
+
+h2{
+    text-align: center;
+    border-top-width: 10px;
+}
+
+.banner{
+    height: 20em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutBanner{
+    animation-name: fadeIn; 				
+	animation-duration: 3s;        			
+	
+    height: 35em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project1{
+    height: 20em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    animation: slide-in-from-left 1000ms;
+}
+
+.project2{
+    height: 20em;
+    margin-bottom: 1em;
+    background-color: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    animation: slide-in-from-right 1000ms;
+}
+
+.aboutBanner{
+    background-image: url("/Assets/images/lancesPic.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation-name: fadeIn; 				
+    animation-duration: 3s;   
+}
+
+
+

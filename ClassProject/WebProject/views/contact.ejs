@@ -1,0 +1,54 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>
+
+<!-- CSS files -->
+
+<link rel="stylesheet" href="/public/content/app.css">
+
+<!-- Main Content -->
+<main>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Contact me</h1>
+    </div>
+  </div>
+</main>
+
+<form action=mailto:lance.palogan@ontariotechu.net ?subject=email Form method="post" enctype="text/plain" name="form">
+
+    <p>
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Enter your Name" size="32" required>
+    </p>   
+
+    <p>
+        <label for="email">Email</label>
+        <input name="email" type="email" size="40" required>
+    </p>
+            
+    <p>
+        <label for="phone">Phone number</label>
+        <!--Format for phone number-->
+        <input name="phone" type="tel" size="40" required pattern = "[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </p> 
+
+    <p>
+        <label for="comments">Comments</label><br>
+        <textarea name="comments" cols="50" rows="6"></textarea>
+    </p>
+
+    <p>
+        <input type="submit" value="Click here to submit the form"/>
+    </p>
+
+</form>
+
+  <!--Script files-->
+  <script src = "/Scripts/app.js"></script>
+  <script src = "/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src = "/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>
